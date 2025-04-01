@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: 2025_cs
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/csdb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: user_csdb
+    password: 1004
+  thymeleaf:
+    cache: false
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto:
